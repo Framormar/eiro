@@ -8,7 +8,7 @@ const person = {
   },
   role: "Empresa Especialista en Ciberseguridad",
   avatar: "/images/avatar.jpg",
-  location: "America/Bogota", // IANA time zone identifier, puedes ajustarlo si lo deseas, ej: 'Europe/Madrid'
+  location: "Europe/Madrid", // IANA time zone identifier, puedes ajustarlo si lo deseas, ej: 'Europe/Madrid'
   languages: ["Español"], // Se puede modificar o agregar otros idiomas si es necesario
 };
 
@@ -27,12 +27,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Framormar",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/victor-bazaga-velasco-48284b313/",
   },
   {
     name: "X",
@@ -73,7 +73,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendario.com",
   },
   intro: {
     display: true,
