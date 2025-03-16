@@ -2,30 +2,28 @@ import { InlineCode } from "@/once-ui/components";
 
 const person = {
   firstName: "EIRO",
-  lastName: "Yu",
+  lastName: "LDPTS",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Empresa Especialista en Ciberseguridad",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Bogota", // IANA time zone identifier, puedes ajustarlo si lo deseas, ej: 'Europe/Madrid'
+  languages: ["Español"], // Se puede modificar o agregar otros idiomas si es necesario
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Suscríbete al Newsletter de {person.firstName}</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Recibe actualizaciones ocasionales sobre cursos, talleres y novedades en el ámbito de la
+      ciberseguridad que ofrecemos en EIRO LDPTS.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -44,27 +42,28 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:contacto@eiro-ldpts.com",
   },
 ];
 
 const home = {
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  label: "Inicio",
+  title: `${person.name}`,
+  description: `Sitio web de ${person.role} demostrando nuestros servicios y paquetes de formación.`,
+  headline: <>Ciberseguridad y Formación</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Bienvenido a <InlineCode>EIRO LDPTS</InlineCode>, una empresa dedicada a la enseñanza y
+      consultoría en ciberseguridad. Ofrecemos paquetes de capacitación para diferentes audiencias:
+      alumnos de colegios, trabajadores de PyMEs, responsables de TI y más.
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "Acerca de",
+  title: "Sobre nosotros",
+  description: `Conoce a ${person.name}, ${person.role} con sede en ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -78,55 +77,101 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introducción",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        EIRO LDPTS es una empresa enfocada en la enseñanza de ciberseguridad y la protección de
+        datos, proporcionando soluciones formativas a organizaciones, instituciones educativas y
+        profesionales que buscan adquirir o reforzar sus conocimientos en seguridad digital. Nuestro
+        equipo cuenta con amplia experiencia en la prevención de amenazas, protección de la
+        información y auditorías de seguridad.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Nuestros Paquetes de Capacitación",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Conciencia básica de ciberseguridad (Alumnos de colegios)",
+        timeframe: "Programa corto",
+        role: "Paquete 1",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            - Temas: Introducción a la seguridad en internet, uso seguro de redes sociales,
+            reconocimiento de amenazas básicas (phishing, malware, ciberacoso) y protección de
+            datos personales.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            - Modalidades de pago:
+            <ul>
+              <li>Pago por persona</li>
+              <li>Pago por hora</li>
+              <li>Pago por sesión</li>
+            </ul>
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Ciberseguridad esencial para trabajadores de PyMEs",
+        timeframe: "Programa intermedio",
+        role: "Paquete 2",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            - Temas: Contraseñas seguras, autenticación multifactor, reconocimiento de amenazas,
+            buenas prácticas en uso de redes WiFi y protección de información confidencial.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            - Modalidades de pago:
+            <ul>
+              <li>Pago por persona</li>
+              <li>Pago por hora</li>
+              <li>Pago por sesión</li>
+            </ul>
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Curso avanzado de Ciberseguridad para responsables de TI (PyMEs)",
+        timeframe: "Programa intensivo",
+        role: "Paquete 3",
+        achievements: [
+          <>
+            - Temas: Detección, análisis y respuesta a incidentes, configuración segura de redes,
+            cifrado avanzado, auditorías de seguridad y pruebas de penetración.
+          </>,
+          <>
+            - Modalidades de pago:
+            <ul>
+              <li>Pago por persona</li>
+              <li>Pago por hora</li>
+              <li>Pago por sesión</li>
+            </ul>
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Ideas Complementarias",
+        timeframe: "Opciones adicionales",
+        role: "Cursos y Talleres Adicionales",
+        achievements: [
+          <>
+            - Seguridad en dispositivos móviles
+          </>,
+          <>
+            - Formación para padres y educadores
+          </>,
+          <>
+            - Cursos de ciberseguridad para directivos
+          </>,
+          <>
+            - Taller de respuesta a incidentes y crisis cibernéticas
+          </>,
+          <>
+            - Programa de actualización continua en ciberseguridad
           </>,
         ],
         images: [],
@@ -134,54 +179,32 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Certificaciones y Trayectoria",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Certificaciones Internacionales",
+        description: <>Contamos con personal certificado en CEH, CISSP y CompTIA Security+.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Experiencia en múltiples sectores",
+        description: <>Hemos colaborado con instituciones educativas y empresas de diferentes rubros.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Competencias Técnicas",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Pentesting",
+        description: <>Realizamos pruebas de penetración para identificar vulnerabilidades.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Gestión de incidentes",
+        description: <>Diseño de planes de contingencia y respuesta a ciberataques.</>,
+        images: [],
       },
     ],
   },
@@ -189,25 +212,20 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Artículos sobre Ciberseguridad",
+  description: `Lee las últimas novedades y consejos de ${person.name} para reforzar tu seguridad digital.`,
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Servicios",
+  title: "Asesorías y Proyectos",
+  description: `Conoce los proyectos y colaboraciones que ${person.name} ha realizado para implementar soluciones de seguridad.`,
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  label: "Galería",
+  title: "Galería de imágenes",
+  description: `Colección de fotos y recursos visuales de ${person.name}`,
   images: [
     {
       src: "/images/gallery/img-01.jpg",
