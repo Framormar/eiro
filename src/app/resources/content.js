@@ -18,7 +18,7 @@ const newsletter = {
   description: (
     <>
       Recibe actualizaciones ocasionales sobre cursos, talleres y novedades en el ámbito de la
-      ciberseguridad que ofrecemos en EIRO LDPTS.
+      ciberseguridad que ofrecemos en NERVA LDPTS.
     </>
   ),
 };
@@ -42,7 +42,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:contacto@eiro-ldpts.com",
+    link: "mailto:contacto@NERVA-ldpts.com",
   },
 ];
 
@@ -53,7 +53,7 @@ const home = {
   headline: <>Ciberseguridad y Formación</>,
   subline: (
     <>
-      Bienvenido a <InlineCode>EIRO LDPTS</InlineCode>, una empresa dedicada a la enseñanza y
+      Bienvenido a <InlineCode>NERVA LDPTS</InlineCode>, una empresa dedicada a la enseñanza y
       consultoría en ciberseguridad. Ofrecemos paquetes de capacitación para diferentes audiencias:
       alumnos de colegios, trabajadores de PyMEs, responsables de TI y más.
     </>
@@ -80,7 +80,7 @@ const about = {
     title: "Introducción",
     description: (
       <>
-        EIRO LDPTS es una empresa enfocada en la enseñanza de ciberseguridad y la protección de
+        NERVA LDPTS es una empresa enfocada en la enseñanza de ciberseguridad y la protección de
         datos, proporcionando soluciones formativas a organizaciones, instituciones educativas y
         profesionales que buscan adquirir o reforzar sus conocimientos en seguridad digital. Nuestro
         equipo cuenta con amplia experiencia en la prevención de amenazas, protección de la
